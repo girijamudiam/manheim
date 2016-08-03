@@ -1,0 +1,16 @@
+<story path="com/girija/qa/manheim/stories/emailsubscription.story" title="Story: Verify email subscription module">
+<meta>
+<property keyword="@" name="module" value="email"/>
+<property keyword="@" name="page" value="home"/>
+</meta>
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="In order to">be reminded of upcoming shoe releases</inOrderTo>
+  <asA keyword="As a">user of the Shoe Store</asA>
+  <iWantTo keyword="I want to">be able to submit my email address</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="email subscription Happy path">
+<step outcome="successful">Given I am on shoestore-manheim</step>
+<step outcome="successful">When I enter valid e-mail in an area to submit email address and submit</step>
+<step outcome="successful">Then I should get &lt;Thanks! We will notify you of our new shoes at this email: users email&gt; message</step>
+</scenario>
+</story>

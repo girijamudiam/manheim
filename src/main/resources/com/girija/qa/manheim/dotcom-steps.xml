@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+  <bean id="driver" class="org.openqa.selenium.firefox.FirefoxDriver" >
+  </bean>
+
+  <bean id="pageFactory" class="com.girija.qa.manheim.pages.PageFactory">
+     <constructor-arg ref="driver"/>
+  </bean>  
+  
+  <bean id="manheimsteps" class="com.girija.qa.manheim.steps.ManheimSteps">
+     <constructor-arg ref="pageFactory"/>
+  </bean>  
+</beans>

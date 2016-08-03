@@ -1,0 +1,20 @@
+<div class="story">
+<h1>Story: Verify email subscription module</h1>
+<div class="path">com/girija/qa/manheim/stories/emailsubscription.story</div>
+<div class="meta">
+<div class="keyword">Meta:</div>
+<div class="property">@module email</div>
+<div class="property">@page home</div>
+</div>
+<div class="narrative"><h2>Narrative:</h2>
+<div class="element inOrderTo"><span class="keyword inOrderTo">In order to</span> be reminded of upcoming shoe releases</div>
+<div class="element asA"><span class="keyword asA">As a</span> user of the Shoe Store</div>
+<div class="element iWantTo"><span class="keyword iWantTo">I want to</span> be able to submit my email address</div>
+</div>
+<div class="scenario">
+<h2>Scenario: email subscription Happy path</h2>
+<div class="step successful">Given I am on shoestore-manheim</div>
+<div class="step successful">When I enter valid e-mail in an area to submit email address and submit</div>
+<div class="step successful">Then I should get &lt;Thanks! We will notify you of our new shoes at this email: users email&gt; message</div>
+</div>
+</div>

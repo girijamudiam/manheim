@@ -1,0 +1,5 @@
+#org.jbehave.core.embedder.StoryManager
+#Wed Apr 08 18:04:59 EDT 2015
+com/girija/qa/manheim/stories/emailsubscription.story=2000
+com/girija/qa/manheim/stories/shoebymonth.story=6000
+total=8000

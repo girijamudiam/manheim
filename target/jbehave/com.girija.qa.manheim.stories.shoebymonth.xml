@@ -1,0 +1,47 @@
+<story path="com/girija/qa/manheim/stories/shoebymonth.story" title="Story: Display upcoming shoe releases by month">
+<meta>
+<property keyword="@" name="module" value="shoeresults"/>
+<property keyword="@" name="page" value="shoeresults"/>
+</meta>
+<narrative keyword="Narrative:">
+  <inOrderTo keyword="In order to">view upcoming shoes being released every month</inOrderTo>
+  <asA keyword="As a">user of the Shoe store</asA>
+  <iWantTo keyword="I want to">be able to visit a link for each month and see the shoes being released</iWantTo>
+</narrative>
+<scenario keyword="Scenario:" title="Display Shoes for each month">
+<examples keyword="Examples:">
+<step>Given I am on shoestore-manheim</step>
+<step>When I select a month for shoe release</step>
+<step>Then month should display a small Blurb of each shoe</step>
+<step>Then Month should display an image each shoe being released</step>
+<step>Then shoe should have a suggested price pricing</step>
+<parameters>
+<names><name>month</name><name>blurb</name><name>image</name><name>price</name></names>
+<values><value>January</value><value>0=Jimmy Choo Jimmy Choo Pumps Shoes;1=Brian Atwood &apos;Tribeca Laser&apos; Sandal;4=Sandal Jimmy Choo Jimmy Choo</value><value>0=_7548482.jpg;4=_7383352.jpg</value><value>1=$1,695.00;4=$1,495.00</value></values>
+<values><value>May</value><value>0=BRIAN ATWOOD Brian Atwood Sandals/Slides Shoes;1=LANVIN Lanvin Sandals/Slides Shoes Adjustable strap</value><value>0=_7397732.jpg;1=_7351975.jpg</value><value>0=$1,995.00;1=$1,590.00</value></values>
+<values><value>December</value><value></value><value></value><value></value></values>
+</parameters>
+
+<example keyword="Example:">{month=January, blurb=0=Jimmy Choo Jimmy Choo Pumps Shoes;1=Brian Atwood &apos;Tribeca Laser&apos; Sandal;4=Sandal Jimmy Choo Jimmy Choo, image=0=_7548482.jpg;4=_7383352.jpg, price=1=$1,695.00;4=$1,495.00}</example>
+<step outcome="successful">Given I am on shoestore-manheim</step>
+<step outcome="successful">When I select a month for shoe release</step>
+<step outcome="successful">Then month should display a small Blurb of each shoe</step>
+<step outcome="successful">Then Month should display an image each shoe being released</step>
+<step outcome="successful">Then shoe should have a suggested price pricing</step>
+
+<example keyword="Example:">{month=May, blurb=0=BRIAN ATWOOD Brian Atwood Sandals/Slides Shoes;1=LANVIN Lanvin Sandals/Slides Shoes Adjustable strap, image=0=_7397732.jpg;1=_7351975.jpg, price=0=$1,995.00;1=$1,590.00}</example>
+<step outcome="successful">Given I am on shoestore-manheim</step>
+<step outcome="successful">When I select a month for shoe release</step>
+<step outcome="successful">Then month should display a small Blurb of each shoe</step>
+<step outcome="successful">Then Month should display an image each shoe being released</step>
+<step outcome="successful">Then shoe should have a suggested price pricing</step>
+
+<example keyword="Example:">{month=December, blurb=, image=, price=}</example>
+<step outcome="successful">Given I am on shoestore-manheim</step>
+<step outcome="successful">When I select a month for shoe release</step>
+<step outcome="successful">Then month should display a small Blurb of each shoe</step>
+<step outcome="successful">Then Month should display an image each shoe being released</step>
+<step outcome="successful">Then shoe should have a suggested price pricing</step>
+</examples>
+</scenario>
+</story>
